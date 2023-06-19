@@ -14,7 +14,7 @@ provider "aws" {
 resource "aws_instance" "web" { 
   ami           = "ami-02eb7a4783e7e9317"
   instance_type = "t2.micro" 
-  name = Iac-demo
+  #name = Iac-demo
   count = 1
   tags = { 
     name = "terraform-ec2" 
