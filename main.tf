@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-   bucket = "tf-tuts-state-10000000"
+   bucket = "tf-jenkins-state-10000000"
    key    = "state"
    region = "us-east-1"
  }
