@@ -2,11 +2,11 @@ terraform {
   backend "s3" {
    bucket = "tf-tuts-state-10000000"
    key    = "state"
-   region = "ap-south-1"
+   region = "us-east-1"
  }
 }
 provider "aws" { 
-  region     = "ap-south-1" 
+  region     = "us-east-1" 
 }
 
 resource "aws_instance" "web" { 
@@ -15,7 +15,7 @@ resource "aws_instance" "web" {
   #name = Iac-demo
   count = 1
   tags = { 
-    name = "terraform-ec2" 
+    Name = "terraform-ec2-jenkins-demo" 
   } 
  }
 
