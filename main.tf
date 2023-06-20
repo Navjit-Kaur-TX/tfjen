@@ -10,7 +10,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "web" { 
-  ami           = "ami-02eb7a4783e7e9317"
+  ami           = "ami-022e1a32d3f742bd8"
   instance_type = "t2.micro" 
   #name = Iac-demo
   count = 1
